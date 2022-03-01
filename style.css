@@ -1,0 +1,142 @@
+html,
+body {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  background-color: #fff;
+  font-family: 'Calibri', sans-serif;
+}
+
+h1,h2,h3{
+    font-family: 'Calibri', sans-serif;
+    color:#222;
+}
+p{
+    font-family: 'Calibri', sans-serif;
+    font-size: 16px;
+    color:#888;
+    line-height: 1.5em;
+}
+hr{
+    height: 1px;
+    border: none;
+}
+.mt-15{margin-top: 15px;}
+.mt-30{margin-top: 30px;}
+
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+[class*="col-"] {
+    width: 100%;
+    float: left;
+}
+
+
+header {
+    max-width: 100%;
+    margin: 0 auto;
+    background: #F6F6F7;
+    padding: 5px;
+    margin-bottom: 30px;
+    }
+
+.price{
+    color:#222;
+    font-weight: bold;
+}
+.size{  
+    color:#888;
+    font-weight: 700;
+}
+.req-star{color:#C90000;}
+
+button.btn-cart{
+    background: #fff;
+    padding:10px 30px;
+    border: 2px solid #000;
+    color:#000;
+    font-size: large;
+    font-weight: bold;
+    font-family: 'Calibri', sans-serif;
+}
+
+button.btn-cart:hover{
+    background:#000;
+    border: 2px solid #000; 
+    color:#fff;
+    transition: background 0.2s ease;
+    -webkit-transition: background 0.2s ease;
+    -moz-transition: background 0.2s ease;
+    -o-transition: background 0.2s ease;
+    -ms-transition: background 0.2s ease;
+}
+
+
+.size-choose button {
+  border: 1px solid #ccc;
+  border-radius: 0;
+  padding: 13px 20px;
+  font-size: 14px;
+  color: #ccc;
+  background-color: #fff;
+  cursor: pointer;
+  /* transition: all .5s; */
+}
+
+.size-choose button:active,
+.size-choose button:focus {
+  border: 1px solid #222;
+  outline: none;
+}
+
+.options {
+  margin-bottom: 20px;
+}
+
+.options a {
+  color: #358ED7;
+  text-decoration: none;
+  font-size: 12px;
+  position: relative;
+  margin: 10px 0;
+  display: inline-block;
+}
+.options a:before {
+  content: "?";
+  height: 15px;
+  width: 15px;
+  border-radius: 50%;
+  border: 2px solid rgba(53, 142, 215, 0.5);
+  display: inline-block;
+  text-align: center;
+  line-height: 16px;
+  opacity: 0.5;
+  margin-right: 5px;
+}
+
+.minicart{
+    float: right;
+    clear: both;
+    font-family: 'Calibri', sans-serif;
+}
+
+.size-letter{color:#222}
+
+
+
+/* ---------- Media Queries --------- */
+
+
+@media only screen and (min-width: 768px) {
+
+}
+
+@media only screen and (max-width: 600px) {
+    hr{display: none !important;}
+
+}

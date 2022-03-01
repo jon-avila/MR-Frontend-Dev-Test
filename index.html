@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="style.css" >
+
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+    <script data-require="jquery@*" data-semver="2.1.1" src="jquery-3.6.0.min.js"></script>
+    
+
+    <title>MR Frontend Developer Technical Test</title>
+</head>
+<body>
+
+
+<header>
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <span class="minicart">My Cart</span>
+            </div>
+        </div>
+    </div>
+</header>
+
+<div class="container">
+    <div class="row">
+        <div class="col-lg-6 col-md-12 col-sm-12 col-12">
+            <img src="images/classic-tee.jpg"  class="img-fluid" width="500" alt="Classic Tee">
+        </div>
+        <div class="col-lg-6 col-md-12 col-sm-12 col-12">
+            <h2 class="mt-15">Classic Tee</h2>
+            <hr>
+            <span class="price mt-30">$75.00</span>
+            <hr>
+            <p class="mt-15">Lorem ipsum dolor sit amet. Ut architecto provident qui dolorem repellat et voluptates tenetur ut voluptatem animi in sapiente Quis aut tempora harum. Eum ipsum natus est odio galisum aut reprehenderit consectetur quo animi praesentium cum repellendus nemo est blanditiis quia in porro rerum? Eos maxime omnis eum cumque tempore vel tempore mollitia.</p>
+
+                
+                <div class="options mt-30">
+                    <p class="size">SIZE<span class="req-star">*</span> <span id="size-letter"></span></p>
+                    <div class="size-choose mt-15">
+                        <button type="button" id="small">S</button>
+                        <button type="button" id="medium">M</button>
+                        <button type="button" id="large">L</button>
+                    </div>
+                </div>
+
+            <button type="button" class="btn-cart mt-15" id="btn-cart"> ADD TO CART</button>          
+
+        </div>    
+    </div>
+</div>
+
+<script>
+    $(document).ready(function(){
+        $('#small').click(function() {
+            $("#size-letter").text("S")
+                .show()
+                .delay(3000);                
+        });
+    $('#medium').click(function() {
+                $("#size-letter").text("M")
+                    .show()
+                    .delay(3000);                    
+            });
+
+  $('#large').click(function() {
+                $("#size-letter").text("L")
+                    .show()
+                    .delay(3000);                    
+            });
+        });
+</script>
+
+<footer>
+    <div class="container">
+        <div class="row">
+            <div class="col">&nbsp;</div>
+        </div>
+    </div>
+</footer>
+
+
+</body>
+</html>
